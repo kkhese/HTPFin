@@ -90,7 +90,7 @@ function Tutorial({navigation}){
   const endTut = () => {
     return(
       <View style={[{marginLeft:15},{marginRight:15},{justifyContent:'center'}]}>
-        <Text style={[styles.text3, {fontSize:30},{color: 'green'}, {fontWeight: 'bold'}]}>  Cogratulations! </Text>
+        <Text style={[styles.text3, {fontSize:30},{color: 'green'}, {fontWeight: 'bold'}]}>  Congratulations! </Text>
         <Text style={[styles.text3, {color: 'green'}, {fontWeight: 'bold'}]}>  You have completed the tutorial! </Text>
       </View>
     );
