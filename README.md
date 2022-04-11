@@ -37,10 +37,37 @@ This beta version has no extraction file for installation. You should import git
 2. Log-in to expo.
 3. Click 'Snacks' and then '+New Snack' button. See below image![enter image description here](https://github.com/kkhese/HTPFin/blob/master/Images/HowtoUse1.png?raw=true)
 4. New snack will be created with random name and default files
-5. Follow the below image instruction and type in https://github.com/kkhese/HTPFin.git into Git URL textbox.![enter image description here](https://github.com/kkhese/HTPFin/blob/master/Images/HowtoUse2.png?raw=true)
-7. 
+5. Follow the below image instruction to import files for the application. Type in https://github.com/kkhese/HTPFin.git into Git URL textbox.![enter image description here](https://github.com/kkhese/HTPFin/blob/master/Images/HowtoUse2.png?raw=true)
+6. After the files are imported, you should update several times, and add several dependencies. Even after updating and adding everything, there is still module error for gesture handler. This problem can be solved by switching expo version from v42.0.0 to v43.0.0. Follow below image instruction.![enter image description here](https://github.com/kkhese/HTPFin/blob/master/Images/HowtoUse3.png?raw=true)
+7. Now you can see QR code on the right side of your screen as blow image. To launch the application at your mobile phone, you should download Expo Go at Android play store. After the download, if you install and run Expo Go, you can scan QR code. Then, you will see the home screen for HTP diagnosis Aid application.![enter image description here](https://github.com/kkhese/HTPFin/blob/master/Images/HowtoUse4.png?raw=true)
+8. Now, All setups are ready to use the application.
 
+## List of Files
 
+- The interpretations for the house pictures are in the house folder, the interpretations for the tree pictures are in the tree folder, and the interpretation for the person pictures are in the person folder.
+
+```
+- App.js ---------> Top file for the application showing all navigation pages
+- README.md ------> This is the file users should read for installing and using
+
+- assets ---------> Image folder for image files used in the applicatoin
+- ./House --------> Folder for Handdrawn images of House category
+- ./Peron --------> Folder for Handdrawn images of Person category
+- ./Tree  --------> Folder for Handdrawn images of Tree category
+
+- Components -----> Folder for all the sub-files for this application
+- -HomeScreen.js -> HomeScreen file
+- -House.js ------> Main Category(House) file
+- -Items.js ------> TodoItem item manage file used for Tutorial.js
+- -Person.js -----> Main Category(Person) file
+- -Tree.js -------> Main Category(Tree) file
+- -Tutorial.js ---> The file for tutorial of this app
+- ./House --------> Folder for 6 files composing House sub-categories and their details
+- ./Person -------> Folder for 6 files composing Person sub-categories and their details
+- ./Tree ---------> Folder for 6 files composing Tree sub-categories and their details
+
+- Images ---------> Images for README.md file
+```
 ## How to Use
 
 App is purely for navigating HTP diagnosis rules for 
@@ -48,7 +75,7 @@ App is purely for navigating HTP diagnosis rules for
 ## Feature List
 
 -   Operating instructions
--   A manifest (list of files)
+
 -   Copyright information
 -   Contact information
 -   Bug list
@@ -59,33 +86,12 @@ App is purely for navigating HTP diagnosis rules for
 -   Project badges
 
 -   Concise project description
--   Clear install instructions
+
 -   Features list
 -   Links to further reading
 -   Change log
 
 
-# Files
-
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
-
-## Create files and folders
-
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-
-## Switch to another file
-
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
-
-## Rename a file
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
-
-## Delete a file
-
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
-
-## Export a file
 
 You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
 
@@ -95,18 +101,6 @@ You can export the current file by clicking **Export to disk** in the menu. You 
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 
 
 ## UML diagrams
