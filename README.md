@@ -1,14 +1,14 @@
-# HTP Diagnosis Aid App 
-![enter image description here](https://github.com/kkhese/HTPaid/blob/master/assets/Main.jpg?raw=true)
-HTP: House, Tree, Person 
+# *Beta Version*![enter image description here](https://github.com/kkhese/HTPFin/blob/master/Images/TitleLogo.png?raw=true)
+![enter image description here](https://github.com/kkhese/HTPfin/blob/master/assets/Main.jpg?raw=true)
+HTP: House, Tree, Person
 
 ## Version Information
 
-This app is Beta Version which includes only short description to help interpret client's drawings:  Please note that this psychoanalysis app is for reference only and may have different interpretations depending on the client's disposition or environment.
+This app is Beta Version which includes only short description to help therapists interpret client's drawings:  Please note that this psychoanalysis app is for reference only and may have different interpretations depending on the client's disposition or environment.
 - App does not support to save client information.
 - App does not generate diagnosis reports.
 - Basic background knowledge of HTP is required to fully utilize this application. 
-- Built-in tutorial does not explain the details about HTP
+- Built-in tutorial exists in the application explaining briefly how to use this application.
 
 ## Table of Contents
 - [Configuration Instruction](#configuration-instructions)
@@ -19,11 +19,12 @@ This app is Beta Version which includes only short description to help interpret
 - 
 ## Configuration Instructions
 ### System/Software Requirement 
- - App fully operates at Android device: Above version 10.0 is highly recommended.
- - It might work on iOS, but not guaranteed.
+ - The application fully operates only at Android device: Version 10.0 or higher version is highly recommended.
+ - The application might work on iOS, but not guaranteed.
+ - The application works at the web, but the screen composition is not good for wide screen.
  - It is necessary to run at EXPO. 
  ### Intended users
- If users need to use this app for practical HTP diagnosis, it is highly recommended to go through the tutorial at the home screen. Otherwise user can simply navigate the contents of application for obtaining required information about HTP diagnosis.
+ If users need to use this application for practical HTP diagnosis, it is highly recommended to go through the tutorial at the home screen. Otherwise user can simply navigate the contents of application for obtaining required information about HTP diagnosis.
  - Professionals: Psychoanalyst, Art therapist, 
  - Amateur: Counselor or student learning HTP
  - Third-party: general public with a strong interest in HTP test
@@ -31,7 +32,14 @@ This app is Beta Version which includes only short description to help interpret
 
 ## How to Run
 
-This beta version has no extraction file for installation. You should import gitHub files at EXPO and run with QR code  
+This beta version has no extraction file for installation. You should import gitHub files at EXPO and run with QR code .
+1. Go to expo homepage https://expo.dev/, and sign up.
+2. Log-in to expo.
+3. Click 'Snacks' and then '+New Snack' button. See below image![enter image description here](https://github.com/kkhese/HTPFin/blob/master/Images/HowtoUse1.png?raw=true)
+4. New snack will be created with random name and default files
+5. Follow the below image instruction and type in https://github.com/kkhese/HTPFin.git into Git URL textbox.![enter image description here](https://github.com/kkhese/HTPFin/blob/master/Images/HowtoUse2.png?raw=true)
+7. 
+
 
 ## How to Use
 
