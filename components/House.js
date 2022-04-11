@@ -72,8 +72,10 @@ function House({navigation}){
           <Image source={require('../assets/HousePart1.png')} 
             style={[{height:((752/1296)*winWidth)}, {width: (616/1296)*winWidth}]} />
           </TouchableOpacity>
+          <TouchableOpacity onPress={()=> navigation.navigate('House-Roof')}> 
           <Image source={require('../assets/HousePart2.png')} 
             style={[{height:((752/1296)*winWidth)}, {width: (680/1296)*winWidth}]} />
+          </TouchableOpacity>
         </View>
       </View>
       {/* 2nd row window for 4 column images, the size of image will be adjusted by the screen size */}
@@ -83,10 +85,14 @@ function House({navigation}){
           <Image source={require('../assets/HousePart3.png')} 
             style={[{height:((669/1296)*winWidth)}, {width: (325/1296)*winWidth}]} />
           </TouchableOpacity>
+          <TouchableOpacity onPress={()=> navigation.navigate('House-Door')}> 
           <Image source={require('../assets/HousePart4.png')} 
             style={[{height:((669/1296)*winWidth)}, {width: (304/1296)*winWidth}]} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={()=> navigation.navigate('House-Window')}> 
           <Image source={require('../assets/HousePart5.png')} 
             style={[{height:((669/1296)*winWidth)}, {width: (353/1296)*winWidth}]} />
+          </TouchableOpacity>
           <TouchableOpacity onPress={()=> navigation.navigate('House-Wall')}> 
           <Image source={require('../assets/HousePart6.png')} 
             style={[{height:((669/1296)*winWidth)}, {width: (316/1296)*winWidth}]} />
@@ -102,8 +108,8 @@ function House({navigation}){
         <Swipeable
           renderLeftActions={leftSwipeActions}
           renderRightActions={rightSwipeActions}
-          onSwipeableRightOpen={()=>navigation.navigate('Tree')}
-          onSwipeableLeftOpen={()=>navigation.navigate('Person')}
+          onSwipeableRightOpen={()=>navigation.push('Tree')}
+          onSwipeableLeftOpen={()=>navigation.push('Person')}
         >
           {/* default setup for sliding window for swiping */}
           <View style={{ paddingHorizontal: 30, paddingVertical: 20, backgroundColor: 'white'}}>

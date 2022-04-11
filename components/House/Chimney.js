@@ -63,7 +63,7 @@ function HouseChimney({navigation}){
        <View style={[{alignItems: 'center'}, {backgroundColor: '#5938ff30'}]}>
         <Text style={[styles.text2]}> Plese Select from Above Images.</Text>
         <Text style={[styles.text2]}> It might have more than 2 images.</Text>
-        <Text style={[styles.text2, {color: 'red'}]}> Horizontally Scrollabe Screen </Text>
+        <Text style={[styles.text2, {color: 'red'}]}> Horizontal ScrollScreen </Text>
       </View> 
     );
   }
@@ -168,7 +168,7 @@ function HouseChimney({navigation}){
   return(
      <View style={[styles.container]}>
       {/* top window for selecting details */}
-      <View>
+      <View style={{marginTop:'3%'}}>
         <Text style={[{fontSize: 16},{textAlign:'center'},{color: 'purple'}]}>
           ← Select the Details →
         </Text>
@@ -204,8 +204,8 @@ function HouseChimney({navigation}){
         <Swipeable
           renderLeftActions={leftSwipeActions}
           renderRightActions={rightSwipeActions}
-          onSwipeableRightOpen={()=>navigation.navigate('Tree')}
-          onSwipeableLeftOpen={()=>navigation.navigate('Person')}
+          onSwipeableRightOpen={()=>navigation.push('Tree')}
+          onSwipeableLeftOpen={()=>navigation.push('Person')}
         >
           {/* default setup for sliding window for swiping */}
           <View style={{paddingHorizontal: 30, paddingVertical: 20, backgroundColor: 'white'}}>

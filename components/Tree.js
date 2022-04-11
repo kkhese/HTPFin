@@ -1,6 +1,8 @@
 // Summon React, React-native coponents
 import React, {useRef, useEffect, useState} from 'react';
-import {ImageBackground, View, StyleSheet, Text, Button, Image, Animated, Dimensions} from 'react-native';
+import {
+  ImageBackground, View, StyleSheet, Text, Button, 
+  Image, Animated, Dimensions, TouchableOpacity} from 'react-native';
 import Swipeable from 'react-native-gesture-handler/Swipeable';
 
 // Get screen size information
@@ -66,18 +68,30 @@ function Tree({navigation}){
       </View>
       {/* 1-6 row for 6 images */}
       <View style={[styles.container], {flex: 2}, {alignItems: 'center'}}>
+        <TouchableOpacity onPress={()=> navigation.navigate('Tree-Title')}> 
         <Image source={require('../assets/TreePart1.png')} 
           style={[{height:((221/1443)*winWidth)}, {width: winWidth}]} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.navigate('Tree-Crown')}> 
         <Image source={require('../assets/TreePart2.png')} 
           style={[{height:((427/1443)*winWidth)}, {width: winWidth}]} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.navigate('Tree-Leaf')}> 
         <Image source={require('../assets/TreePart3.png')} 
           style={[{height:((236/1443)*winWidth)}, {width: winWidth}]} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.navigate('Tree-Branch')}> 
         <Image source={require('../assets/TreePart4.png')} 
           style={[{height:((238/1443)*winWidth)}, {width: winWidth}]} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.navigate('Tree-Trunk')}> 
         <Image source={require('../assets/TreePart5.png')} 
           style={[{height:((223/1443)*winWidth)}, {width: winWidth}]} />
+        </TouchableOpacity>        
+        <TouchableOpacity onPress={()=> navigation.navigate('Tree-Root')}> 
         <Image source={require('../assets/TreePart6.png')} 
           style={[{height:((251/1443)*winWidth)}, {width: winWidth}]} />
+        </TouchableOpacity>
       </View>
       {/* empty window for top margin */}
       <View style={[styles.container], {flex: 1}}>
@@ -88,8 +102,8 @@ function Tree({navigation}){
         <Swipeable
           renderLeftActions={leftSwipeActions}
           renderRightActions={rightSwipeActions}
-          onSwipeableLeftOpen={()=>navigation.navigate('House')}
-          onSwipeableRightOpen={()=>navigation.navigate('Person')}
+          onSwipeableLeftOpen={()=>navigation.push('House')}
+          onSwipeableRightOpen={()=>navigation.push('Person')}
         >
           {/* default setup for sliding window for swiping */}
           <View

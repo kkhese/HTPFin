@@ -1,6 +1,6 @@
 // Summon React, React-native coponents
 import React, {useRef, useEffect, useState} from 'react';
-import {ImageBackground, View, StyleSheet, Text, Button, Image, Animated, Dimensions} from 'react-native';
+import {ImageBackground, View, StyleSheet, Text, Button, Image, Animated, Dimensions, TouchableOpacity} from 'react-native';
 import Swipeable from 'react-native-gesture-handler/Swipeable';
 
 // Get screen size information
@@ -65,26 +65,38 @@ function Person({navigation}){
       </View>
       {/* 1-2nd row window for 2 images, the size of image will be adjusted by the screen size */}
       <View style={[styles.container], {flex: 1}, {alignItems: 'center'}}>
+        <TouchableOpacity onPress={()=> navigation.navigate('Person-Head')}> 
         <Image source={require('../assets/PersonPart1.png')} 
           style={[{height:((275/1257)*winWidth)}, {width: winWidth}]} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.navigate('Person-EyeMouthNose')}> 
         <Image source={require('../assets/PersonPart2.png')} 
           style={[{height:((350/1256)*winWidth)}, {width: winWidth}]} />
+        </TouchableOpacity>
       </View>
       {/* 3rd row window for 2 column images, the size of image will be adjusted by the screen size */}
       <View style={[styles.container], {flex: 1}, {alignItems: 'center'}}>
         <View style={{flexDirection: 'row'}}>
+          <TouchableOpacity onPress={()=> navigation.navigate('Person-Arm')}> 
           <Image source={require('../assets/PersonPart3.png')} 
             style={[{height:((677/1257)*winWidth)}, {width: (499/1257)*winWidth}]} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={()=> navigation.navigate('Person-FaceNeck')}> 
           <Image source={require('../assets/PersonPart4.png')} 
             style={[{height:((677/1257)*winWidth)}, {width: (758/1257)*winWidth}]} />
+          </TouchableOpacity>
         </View>
       </View>
       {/* 4-5th row window for 2 images, the size of image will be adjusted by the screen size */}
       <View style={[styles.container], {flex: 1}, {alignItems: 'center'}}>
+        <TouchableOpacity onPress={()=> navigation.navigate('Person-ETC')}> 
         <Image source={require('../assets/PersonPart5.png')} 
           style={[{height:((396/1257)*winWidth)}, {width: winWidth}]} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.navigate('Person-Leg')}> 
         <Image source={require('../assets/PersonPart6.png')} 
           style={[{height:((361/1257)*winWidth)}, {width: winWidth}]} />
+        </TouchableOpacity>
       </View>
       {/* empty window for top margin */}
       <View style={[styles.container], {flex: 1}}>
@@ -95,8 +107,8 @@ function Person({navigation}){
         <Swipeable
           renderLeftActions={leftSwipeActions}
           renderRightActions={rightSwipeActions}
-          onSwipeableRightOpen={()=>navigation.navigate('House')}
-          onSwipeableLeftOpen={()=>navigation.navigate('Tree')}
+          onSwipeableRightOpen={()=>navigation.push('House')}
+          onSwipeableLeftOpen={()=>navigation.push('Tree')}
         >
           {/* default setup for sliding window for swiping */}
           <View style={{paddingHorizontal: 30, paddingVertical: 20, backgroundColor: 'white'}}>
