@@ -55,7 +55,7 @@ function HomeScreen({navigation}){
       <Button title="How to Use -:- App Tutorial" color='darkgrey' onPress={()=> navigation.push('Tutorial')} /> 
       {/* View window for 2 line-text at the top */}
       <View style={
-        [{flex:0.08},{alignItems: 'center'}, {justifyContent:'flex-end'},
+        [{flex:0.1},{alignItems: 'center'}, {justifyContent:'flex-end'},
         {marginTop:'15%'}
         ]}>
         {/* Text Size setup depending on window size */}
