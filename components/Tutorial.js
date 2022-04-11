@@ -61,7 +61,7 @@ function Tutorial({navigation}){
   const subDetail = () => {
     return(
       <View style={[{marginLeft:15},{marginRight:15}]}>
-        <Text style={[styles.text3, {color: 'black'}]}>  Each sub-categories has detail categories again. Detail categories are at the top window of sub-category window. <Text style={[styles.text3, {color: 'red'}]}>2-6 </Text>detail categories exist for each sub-category. Initial screen of sub-category will notify that the top detail category selection window supports <Text style={[styles.text3, {color: 'red'}]}>HORIZONTAL </Text> scroll view.</Text>
+        <Text style={[styles.text3, {color: 'black'}]}>  Each sub-categories has detail categories again. Detail categories are at the top window of sub-category window. <Text style={[styles.text3, {color: 'red'}]}>2-4 </Text>detailed categories exist for each sub-category. Initial screen of sub-category will notify that the top detailed category selection window supports <Text style={[styles.text3, {color: 'red'}]}>HORIZONTAL </Text> scroll view.</Text>
         <Text style={[styles.text3, {color: 'black'}]}>  You can still switch among main categories by <Text style={[styles.text3, {color: 'red'}]}>SWIPING </Text>the bottom sliding window. Below image show the initial sub-category screen when chimney is clicked from the House category</Text>
         <Image source={require('../assets/Tut03.png')} style={[{height:((1582/2129)*winWidth)}, {width: winWidth}]} />
       </View>
@@ -73,6 +73,7 @@ function Tutorial({navigation}){
       <View style={[{marginLeft:15},{marginRight:15}]}>
         <Text style={[styles.text3, {color: 'black'}]}>  There is <Text style={[styles.text3, {color: 'red'}]}>NO</Text> more <Text style={[styles.text3, {color: 'red'}]}>SEPARATE</Text> page. If you select detail categories from the top horizontal view, diagnosis information for chosen image part will be desplayed. If the content is long, you can scroll up and down to see the information you need.</Text>         
         <Text style={[styles.text3, {color: 'black'}]}>  You can still switch among main categories by <Text style={[styles.text3, {color: 'red'}]}>SWIPING </Text>the bottom sliding window.</Text>
+        <Image source={require('../assets/Tut04.png')} style={[{height:((1325/1494)*winWidth)}, {width: winWidth}]} />
       </View>
     );
   }  
@@ -147,35 +148,31 @@ function Tutorial({navigation}){
     <View style={[styles.container]}>
     {/* Main window */}
       {/* 1st sub window with background image */}
-      <View style={[styles.container]}>
+      <View style={[{flex:1}]}>
         <ImageBackground 
-            source={require('../assets/Tutorial.jpg')} 
-            style={[styles.image, {padding: 10},]}>
-            {/* Title */}
-            <Text style={[styles.text, {color: 'white'}]}> Turorial for App User </Text>
-            <Text style={[styles.text2, {color: 'purple'}]}> H
-            <Text style={[styles.text2, {color: 'black'}, {fontSize: 12}]}>(house) 
-            <Text style={[styles.text2, {color: 'purple'}]}> T
-            <Text style={[styles.text2, {color: 'black'}, {fontSize: 12}]}>(tree) 
-            <Text style={[styles.text2, {color: 'purple'}]}> P
-            <Text style={[styles.text2, {color: 'black'}, {fontSize: 12}]}>(person)
-            </Text></Text></Text></Text></Text></Text>
+          source={require('../assets/Tutorial.jpg')} 
+          style={[styles.image, {padding: 10},]}>
+          {/* Title */}
+          <Text style={[styles.text, {color: 'white'}]}> Turorial for App User </Text>
+          <Text style={[styles.text2, {color: 'purple'}]}> H
+          <Text style={[styles.text2, {color: 'black'}, {fontSize: 12}]}>(house) 
+          <Text style={[styles.text2, {color: 'purple'}]}> T
+          <Text style={[styles.text2, {color: 'black'}, {fontSize: 12}]}>(tree) 
+          <Text style={[styles.text2, {color: 'purple'}]}> P
+          <Text style={[styles.text2, {color: 'black'}, {fontSize: 12}]}>(person)
+          </Text></Text></Text></Text></Text></Text>
           {/* toDo list */}
-          <ScrollView>
-            <View style={[{justifyContent: 'center'}]}>
-              <FlatList 
-                data={todo}
-                renderItem={( {item} )=>(
-                  <TodoItem item={item} pressHandler={pressHandler}/>
-                )}
-                ItemSeparatorComponent={renderSeparator}            
-              />
-            </View>
-          </ScrollView>
+          <FlatList 
+            data={todo}
+            renderItem={( {item} )=>(
+              <TodoItem item={item} pressHandler={pressHandler}/>
+            )}
+            ItemSeparatorComponent={renderSeparator}            
+          />
         </ImageBackground>
       </View>
       {/* Contests window for tutorial */}
-      <View style={[styles.container,{marginTop:50}, {flex:3}]}>
+      <View style={[styles.container,{marginTop:50}, {flex:2.5}]}>
         <ScrollView style={[styles.text2]}>
           {step1}
         </ScrollView>
