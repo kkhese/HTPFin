@@ -1,3 +1,6 @@
+// Swipe Action functions were modified from the sourse of 
+// https://blog.logrocket.com/react-native-gesture-handler-swipe-long-press-and-more/
+
 // Summon React, React Native components
 import React, {useRef, useEffect, useState} from 'react';
 import {View, StyleSheet, Text, Button, Image, ScrollView, TouchableOpacity, Dimensions} from 'react-native';
@@ -149,7 +152,7 @@ function HouseWindow({navigation}){
         </View>  
         <View style={[{marginBottom:7},{marginLeft:15},{marginRight:15}]}>
           <Text style={[styles.text3]}>Triangle:</Text>
-          <Text>  1. fixation on women's sexuality</Text>
+          <Text>  1. Fixation on women's sexuality</Text>
           <Text>  2. Excessive interest in women's sexuality</Text>
         </View>        
       </View> 
@@ -165,7 +168,7 @@ function HouseWindow({navigation}){
         </View> 
         <View style={[{marginBottom:7},{marginLeft:15},{marginRight:15}]}>
           <Text style={[styles.text3]}>On roof:</Text>
-          <Text>  1. avoid being exposed</Text>
+          <Text>  1. Avoid being exposed</Text>
           <Text>  2. Trying to contact the world through fantasies or accidents</Text>
           <Text>  3. Preoccupation with autistic daydreaming</Text>
         </View>

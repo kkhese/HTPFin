@@ -1,3 +1,6 @@
+// Swipe Action functions were modified from the sourse of 
+// https://blog.logrocket.com/react-native-gesture-handler-swipe-long-press-and-more/
+
 // Summon React, React Native components
 import React, {useRef, useEffect, useState} from 'react';
 import {View, StyleSheet, Text, Button, Image, ScrollView, TouchableOpacity, Dimensions} from 'react-native';
@@ -146,7 +149,7 @@ function HouseRoof({navigation}){
         </View>
         <View style={[{marginBottom:7},{marginLeft:15},{marginRight:15}]}>
           <Text style={[styles.text3]}>Highlight the eaves:</Text>
-          <Text>  obsessive-compulsive</Text>
+          <Text>  Obsessive-compulsive</Text>
         </View>
         <View style={[{marginBottom:7},{marginLeft:15},{marginRight:15}]}>
           <Text style={[styles.text3]}>Extra work on roof:</Text>

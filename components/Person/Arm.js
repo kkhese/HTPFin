@@ -1,3 +1,6 @@
+// Swipe Action functions were modified from the sourse of 
+// https://blog.logrocket.com/react-native-gesture-handler-swipe-long-press-and-more/
+
 // Summon React, React Native components
 import React, {useRef, useEffect, useState} from 'react';
 import {View, StyleSheet, Text, Button, Image, ScrollView, TouchableOpacity, Dimensions} from 'react-native';
@@ -189,7 +192,7 @@ function PersonArm({navigation}){
           <Text>  2. Hostile behavior</Text>
         </View>  
         <View style={[{marginBottom:7},{marginLeft:15},{marginRight:15}]}>
-          <Text style={[styles.text3]}>Hnad in pocket:</Text>
+          <Text style={[styles.text3]}>Hand in pocket:</Text>
           <Text>  1. Controlling the escape tendencies or being lazy and introverted</Text>
           <Text>  2. Possibility of interest in masturbation</Text>
         </View>  
