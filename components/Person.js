@@ -1,3 +1,7 @@
+// Swipe Action functions were modified from the sourse of 
+// https://blog.logrocket.com/react-native-gesture-handler-swipe-long-press-and-more/
+
+
 // Summon React, React-native coponents
 import React, {useRef, useEffect, useState} from 'react';
 import {ImageBackground, View, StyleSheet, Text, Button, Image, Animated, Dimensions, TouchableOpacity} from 'react-native';
@@ -112,8 +116,8 @@ function Person({navigation}){
         >
           {/* default setup for sliding window for swiping */}
           <View style={{paddingHorizontal: 30, paddingVertical: 20, backgroundColor: 'white'}}>
-            <Text style={{ fontSize: 24, textAlign: 'center' }}>
-              Switch Main Category
+            <Text style={{ fontSize: 22, textAlign: 'center' }}>
+              ◀ Switch Main Category ▶
             </Text>
           </View>
         </Swipeable>
